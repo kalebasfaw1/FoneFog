@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FoneFog</title>
+</head>
+
+<body>
+    <p>Enter Dimensions: </p>
+    <form action="#" id="parameters">
+        <input type="text" name="height" id="map_height" placeholder="height">
+        <input type="text" name="width" id ="map_width" placeholder="width">
+        <button type="submit" value="refresh">Refresh!</button>
+        
+    </form>
+
+    <div id="grid_container"></div>
+
+    <form action="#" id="save">
+        <button type="submit" value="save">Save as:</button>
+        <input type="text" name="savename" id="savename" placeholder="room name">
+    </form>
+
+    <form action="#" id="load">
+        <button type="submit" value="load">Load Room:</button>
+        <input type="text" name="loadroom" id="loadroom" placeholder="room number">
+    </form>
+
+    <ol id="rooms_list">
+
+    </ol>
+    
+    <script src="script.js"></script> 
+
+</body>
+</html>
