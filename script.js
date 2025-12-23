@@ -26,13 +26,18 @@ save_form.addEventListener("submit", (e) => {
     var ListItem = document.createElement("li")
     ListItem.innerText = room_names[room_names.length - 1]
     rooms_LIST.appendChild(ListItem)
-
+    // Clear the save name input after saving so the user sees a fresh box
+    const saveNameInput = document.getElementById("savename");
+    saveNameInput.value = "";
 });
 
 load_room.addEventListener("submit", (e) => {
     e.preventDefault()
     let roomnumber = Number(document.getElementById("loadroom").value)
     loadRoom(roomnumber-1);
+
+    const saveLoadInput = document.getElementById("loadroom");
+    saveLoadInput.value = "";
 })
 
 
